@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Imput tags</title>
+</head>
+
+<body>
+    <h2>HTML FORM TUTORIALS</h2>
+    <!-- form tag is used to create a form -->
+    <!-- action is an attribute which is used to save the data, means when user enters the data in form the data will save in backend file ,here which is named as backend.php -->
+    <!-- input tag is inline element and div is a block element -->
+    <!-- instead of br tag we use div tag -->
+    <!-- Name is used for backend file , means we give a name to each input tag to check or compare the value in backend -->
+    <!-- backend.php is not created yet so please ignore it -->
+    <!-- many types of input tag are there like radio button checkboxes and number etc  -->
+    <form action="backend.php">
+        <div>
+            Name : <input type="text" name="myname">
+        </div>
+        <br>
+        <!-- label is used when you clicked on label and it automatically select the textarea for=" " and id=" " will be same than uou can use this tag -->
+        <label for="hello">Contact</label>
+        <div>
+            <input type="tel" name="mycontact" id="hello">
+        </div>
+        <label for="car">Car</label>
+        <div>
+            <!-- select is used to make a drop down list using option -->
+            <select name="mycar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swi">swift</option>
+                <!-- <option value="swi"selected>swift</option>   use when by default              -->
+
+            </select>
+        </div>
+        <br>
+        <div>
+            Email : <input type="email" name="myemail">
+        </div>
+        <br>
+        <!-- Date tag automatically create a date drop down list -->
+        <div>
+            Dob : <input type="Date" name="mydob">
+        </div>
+        <br>
+        <!-- Radio button can be used on gender -->
+        <!-- if name is same in both radio buttons than only 1 radio button will be checked otherwise both -->
+        <div>
+            Gender : Male <input type="Radio" name="mygender">
+            Female <input type="Radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            checkboxes : <input type="checkbox" name="mycheckbox"><br>
+            <!-- if you want your checked by default then use below tag -->
+            checked by default : <input type="checkbox" name="mycheckbox" checked>
+        </div>
+        <br>
+        <div>
+            write about yourself : <br><textarea name="my text" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <!-- Submit is used to create a submit button and value is uded to write over submit button -->
+        <!-- when you click on submit all data will be moved to backend file -->
+        <div>
+            Submit : <input type="submit" value="submit now">
+        </div>
+        <br>
+        <div>
+            <!-- Reset tag is used to reset everything in form -->
+            Reset : <input type="Reset" value="Reset Now">
+        </div>
+    </form>
+
+</body>
+
+</html>

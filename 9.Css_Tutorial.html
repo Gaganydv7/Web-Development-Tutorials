@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css TUtorial</title>
+    <!-- this tag is used for external css  -->
+    <!-- and the code which is written in last ,that will get higher precedence , like if we write internal css tag in las then the ouput will be according to internal css and if we write external css tag in last then the ouput will be according to external css-->
+    <!-- and if you  want to change the precedence than  use !important -->
+    <link rel="stylesheet" href="9.external.css"> 
+    <!-- Below tag is used for internal css -->
+<style>
+    p{
+        color: red;
+        background-color: yellowgreen;
+    }
+</style>
+</head>
+<body>
+    <h2>Css Tutorials</h2>
+    <!-- inline css have higher priority as compare to internl css and external css-->
+    <!-- In inline css the style is defined witin a tag ,which is in body section. -->
+    <!-- we should avoid to use inline css beacause it make the code very messy nd it's quite hard to read the code -->
+    <p style="color: blue; background-color: chartreuse;">This is inline Css</p>
+
+    <!-- Internal css is defined in head section using style tag -->
+    <p >This is intenal Css</p>
+    <p>This is external css</p>
+</body>
+</html>

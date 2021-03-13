@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Alignment) Float & clear in css</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: cursive;
+        }
+
+        .container{
+            border: 3px solid purple;
+            width:900px;
+            margin:35px auto; /* t=33px and x=auto*/
+        }
+
+        .item{
+            border: 3px solid brown;
+            margin:13px;
+            padding: 13px;
+            background-color:rosybrown;
+        }
+
+        /* for float left or right use Id */
+        #fruits{
+            float:left;
+            width: 47%;
+        }
+
+        #computer{
+            float:left;
+            width: 47%;
+        }
+
+        #stationary{
+            /* float:left; */
+            /* clear is use to remove overlapping ,it means whatever float is left don't interfare them , clear left means float left is not allowed over clear left */
+            /* clear: left; */
+            /* and if dont want to overlap both side i.e left and right then use below tag */
+            clear:both;
+            width: 97%;
+        }
+
+        /* these code ae used for text alingment , move text left right or in center */
+        p,h2{
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>(Alignment) Float & clear in Css Tutorials</h2>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h2>fruits</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati libero, officia, expedita ullam reiciendis est inventore suscipit ex, at pariatur debitis? Ab, ullam sequi dicta, perspiciatis corrupti provident fugiat reiciendis facere animi illum, consequuntur deleniti adipisci consectetur earum? Esse, atque..</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h2>computer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis cumque, omnis nostrum facere provident doloribus sapiente itaque perferendis, illum laudantium exercitationem ducimus distinctio! Animi necessitatibus earum, consectetur cupiditate omnis voluptatem amet delectus minima, quis assumenda repudiandae, qui iusto quos doloremque?</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h2>stationary</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae deleniti totam reiciendis minus facilis asperiores eaque officiis commodi itaque quia eligendi, atque voluptas. Quisquam, inventore quae aperiam beatae sapiente deleniti sed quo. Eum soluta in expedita facere sint, dolores at.</p>
+        </div>
+        <div id="glassespara" class="item">
+
+            <h2>Glasses</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae deleniti totam reiciendis minus facilis asperiores eaque officiis commodi itaque quia eligendi, atque voluptas. Quisquam, inventore quae aperiam beatae sapiente deleniti sed quo. Eum soluta in expedita facere sint, dolores at.</p>
+        </div>
+
+    </div>
+</body>
+</html>

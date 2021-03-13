@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links & buttons</title>
+
+    <style>
+        /* active,hover, visited these are pseudo selectors */
+        .container{
+            background-color: seagreen;
+            border:2px solid blue;
+            padding:34px;
+            margin:34px auto;
+            width:600px;
+        }
+        a{
+            /* this is used to remove underline in a link */
+            text-decoration: none;
+        }
+        a:hover{
+            /* This is used tohover in link */
+            color:yellow; /*this will change text color of link*/
+            background-color:darkorange; /*this will change background color of link*/
+        }
+        a:visited{
+            /* this will change background color of link when we click on it and press back */
+            background-color:black;
+        }
+        a:active{
+            /* active is used when you click on a button or link it change the color for split second , it tells you that you clicked on it, to watch it pess for long time */
+            background-color: gray;
+        }
+        .btn:hover{
+            
+            /* This is used to hover in button */
+            color:red; /*this will change text color ofbutton*/
+            background-color: teal; /*this will change background color of button*/
+            border:2px solid black; /* this will add borderwhen someone hover over it*/
+        }
+
+        .btn{
+            background-color: springgreen;
+            font-weight: bold;
+            border:none;
+            padding:5px;
+            cursor: pointer; /* user to make a hand when get over buttonor link*/
+            font-family: cursive;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Styling Links & buttons in Css</h2>
+    <div id="para" class="container">
+        <h2>This is heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error et repellat accusamus tenetur, eos nostrum ipsa eum reiciendis hic vitae.</p>
+        <a href="https://www.google.com/"  class="btn">Read More</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

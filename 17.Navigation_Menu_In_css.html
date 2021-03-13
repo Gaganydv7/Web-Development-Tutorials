@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a navigation menu</title>
+
+    <style>
+        .navbar{
+            background-color:black;
+            border-radius: 30px;
+        }
+
+        .navbar ul{
+            /* by using this we can add backgrund color again */
+            overflow: auto;
+        }
+        .navbar li{
+            /* when we use float left then it will discard background color , it make it overflow from parent , so use a tag overflow auto in ul asgiven above */
+            float:left;
+            list-style: none;
+            margin:13px 40px;
+        }
+
+        .navbar li a{
+            color:white;
+            padding: 5px 5px;
+            text-decoration: none;
+        }
+        .navbar li a:hover{
+            color:red;
+            /* background-color:chartreuse; */
+            
+        }
+        .search{
+            float: right;
+            color: cyan;
+            padding: 12px 160px;
+        }
+        .navbar input{
+            border:2px solid chartreuse;
+            border-radius: 14px;
+            width: 210px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Creating navigation menu in css</h2>
+    <header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search here"></input>
+            </div>
+        </ul>
+    </nav>
+    </header>
+</body>
+</html>

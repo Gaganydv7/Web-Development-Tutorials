@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute,Relative,Fixed & sticky</title>
+    <style>
+        /* position are static i.e by default , relative, absolute fixed and sticky */
+        .box{
+            display: inline-block;
+            border:2px solid blue;
+            width:100px;
+            height:100px;
+            margin:3px;
+        }
+
+        #box3{
+            /* if you use relative , than it will move to its normal/new real position example given below */
+            /* use when you want to change in old position */
+            /* position: relative; */
+            /* position: absolute; */
+            /* absolute will move relative to the parent .ie. body  ie. cotainer here*/
+            /* top: 20px;
+            left: 30px; */
+
+            /* position:fixed;
+            right: 200px; */
+            /* position fixed is used when you scroll down but, the box will remain its constant position */
+
+            position: sticky;
+            /* when we scroll sticky help to show to box over the browser , it sticks to given position */
+            top: 3px;
+        }
+        .container{
+            border: 2px solid indigo;
+            background-color: lightcoral;
+            height:2000px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>Position Absolute,Relative,Fixed & sticky in css</h2>
+    <div id="box1" class="box">1</div>
+    <div id="box2" class="box">2</div>
+    <div id="box3" class="box">ChatBox</div>
+    <div id="box4" class="box">4</div>
+</div>
+</body>
+</html>

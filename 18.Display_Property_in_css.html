@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            border:2px solid blue;
+            margin:auto; /*we cannot use margin auto in block element  we should use both width & margin auto to makeit in center ,given below*/
+            width :500px;
+        }
+        img{
+            height: 50px;
+            width: 50px;
+            /* display block and margin auto both used to make a picture in center */
+            display: block;
+            margin:auto;
+        }
+
+        h2{
+            font-family: cursive;
+            text-align: center;
+            margin:0px;
+        }
+
+        .box{
+            border:3px solid black;
+            background-color: gray;
+            margin:10px 0px;
+            padding:20px;
+            display:inline-block;
+            width:164px;
+
+        }
+        .container{
+            margin: auto;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Display Property in css</h2>
+    <header class="topper">
+        <img src="https://avatars.githubusercontent.com/u/64259401?s=460&u=4e8185ce7c43ffc79d7a742f9d476edf63c61e4b&v=4"alt="error loading image">
+        <h2>This is paragraph</h2>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4>This is box 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias eaque voluptatum maiores.</p>
+        </div>
+        <div class="box">
+            <h4>This is box 2</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias eaque voluptatum maiores.</p>
+        </div>
+        <div class="box">
+            <h4>This is box 3</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias eaque voluptatum maiores.</p>
+        </div>
+    </div>
+</body>
+</html>

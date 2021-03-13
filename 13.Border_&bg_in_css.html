@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height , Width ,Borders and Background in Css</title>
+    <style>
+        #firstpara{
+            background-color:salmon;
+            width: 500px;
+            height: 150px;
+            border: 4px;
+            border-style: solid;
+            border-color: blue;
+            /* border radius is used for rounded border at corners */
+            border-radius: 11px;
+            /* you can also write this all in one line as written below */
+            /* border:2px solid red; */
+        }
+
+        #secondpara{
+            background-color:chartreuse ;
+            width: 400px;
+            height: 200px;
+            border-right: 5px solid blue;
+            border-bottom: 5px solid red;
+            border-left: 5px solid purple;
+            border-top: 5px solid brown;
+            /* if want to round border in a particular region than use below tag*/
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        #thirdpara{
+            width: 500px;
+            height: 500px;
+            border: 6px solid brown;
+            background-image: url('https://avatars.githubusercontent.com/u/64259401?s=400&u=4e8185ce7c43ffc79d7a742f9d476edf63c61e4b&v=4');
+            background-repeat: no-repeat; /* use repeat-x and repeat-y if wou want photo on xand y axis */
+            /* background-position: center center; */
+            /* first will be top,bottom or center and second will be left,right,center */
+            background-position: center top;
+            /* below tag is used to movemage on a particular position*/
+            /* background-position: 100px top; */
+        }
+    </style>
+</head>
+<body>
+    <h2>Border and Background in Css Tutorials</h2>
+    <p id="firstpara">This is border</p>
+    <p id="secondpara">This is for one side border</p>
+    <p id="thirdpara">This is third border</p>
+</body>
+</html>

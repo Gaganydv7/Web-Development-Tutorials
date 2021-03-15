@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & Z-index</title>
+
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border:3px solid black;
+        }
+
+        #box1{
+            background-color: burlywood;
+            position: relative;
+            top:34px;
+            z-index: 54px;
+            z-index: -35px;
+        }
+        #box2{
+            /* visibility is used to hide a box or div , but the box space will be reserved  */
+            /* visibility: hidden; */
+            /* display none is used to hide a element but it also removes the space which is taken by the box */
+            /* display: none; */
+            /* Z-index is used , when one box overlaps each other it will specify which will come over whome and Z-index only work with position like relative,absolute,fixed , sticky but not with static position */
+            /* this z-index value is greater that will come upper */
+            /* if you give - value it will get back by default */
+            background-color: royalblue;
+            position: relative;
+            top:34px;
+            z-index: 104px;
+            /* z-index: -30px; */
+            
+        }
+        #box3{
+            background-color: red;
+        }
+        #box4{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Visibility & Z-index in css</h1>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

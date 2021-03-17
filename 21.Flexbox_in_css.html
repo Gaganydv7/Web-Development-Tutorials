@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+
+<style>
+    .container{
+        width:100%;
+        height:544px;
+        border: 3px solid black;
+        background-color: aqua;
+        /* by use of flex code the div will come in a line */
+        display: flex;
+        /* flex direction row is by default */
+        flex-direction: row;
+        /* flex direction column will separate divs n column */
+        /* flex-direction: column; */
+        /* it will start from right side that is/oppsite  row riverse */
+        /* flex-direction: row-reverse; */
+        /* it will start from bottom side that is/oppsite  cloumn riverse */
+        /* flex-direction: column-reverse; */
+        /* flex wrapis used to make it responsive */
+        flex-wrap: wrap;
+        /* flex wrapis used to make it responsive in an oppsite manner */
+        /* flex-wrap: wrap-reverse; */
+        /* justiy center is used to make all the div in center */
+        /* justify-content: center; */
+        /* space between is used to make space between divs from left to right corner equally */
+        /* justify-content: space-between; */
+        /* evenly divide space in all divs */
+        /* justify-content: space-evenly; */
+        /* align item is used to make it vertically center */
+        /* align-items: center; */
+        /* flex  end will make in end of div */
+        /* align-items: flex-end; */
+        /* vertically evenly make using stretch */
+        align-items: stretch;
+    
+    }
+
+    /* flex properties for flex container */
+    .item{
+        width: 140px;
+        height: 140px;
+        background-color: tomato;
+        border: 2px solid darkblue;
+        margin: 6px;
+        padding: 4px;
+    }
+
+    #box-1{
+        /* order changes the order of the boxes in this case the first box come in last */
+        order: 2;
+        /* flex grow is used to increase or decrease box sizing while checking responsiveness and here negative value willnot work use shrink instead of this */
+        /* flex-grow: 2; */
+        flex-shrink: 3;
+    
+        /* flex-basis: 260px; */
+    }
+    #box-3{
+        /* this will go in last , whose order is bigger that will go in last */
+        order: 40;
+        /* by using this ,the will go in end and if you do flex start then it will go to start */
+        /* align-self: flex-end; */
+        /* align-self: flex-start; */
+        align-self:center;
+    }
+</style>
+<body>
+    <h1>Flexbox in css Tutorial</h1>
+    <!-- flexbox is a one-dimensional layout method for laying out method in rows and columns -->
+    <!-- better way of align items into a contaniner -->
+    <!-- flexbox = flexible + box -->
+    <div class="container">
+        <div class="item" id="box-1">First box</div>
+        <div class="item" id="box-2">Second box</div>
+        <div class="item" id="box-3">Third box</div>
+        <div class="item" id="box-4">Fourth box</div>
+        <div class="item" id="box-5">fifth box</div>
+        <div class="item" id="box-6">sixth box</div>
+    </div>
+
+</body>
+
+</html>
